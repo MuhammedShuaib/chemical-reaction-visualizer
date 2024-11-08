@@ -14,7 +14,6 @@ const App = () => {
             Intermediate Chemical Reaction Visualizer
           </h1>
         </header>
-        {/* Rest of your app */}
         <div className="main-content">
           <ReactantSelection setReactionDetails={setReactionDetails} />
           <ProductVisualization reactionDetails={reactionDetails} />
@@ -23,9 +22,9 @@ const App = () => {
 
         <footer className="app-footer">
           <p>
-            © 2024 Shuaib Khan. All rights reserved.
+            © 2023 Shuaib Khan. All rights reserved.
             <a
-              href="https://mdshuaibkhan.netlify.net"
+              href="https://mdshuaibkhan.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link">

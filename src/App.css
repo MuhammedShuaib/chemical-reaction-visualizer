@@ -1,60 +1,59 @@
 /* Global Styles */
 body {
   background: url("main.jpg") no-repeat center center/cover; /* Background image */
-  background-attachment: fixed; /* Fix the background image while scrolling */
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  color: #333; /* Dark gray for text */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  color: #333;
+  overflow-x: hidden;
 }
 
-/* Add a glassy layer */
 .glassy-container {
   width: 90%;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.75); /* Semi-transparent white */
+  background: rgba(255, 255, 255, 0.75);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px); /* Glassy effect */
+  backdrop-filter: blur(10px);
   margin: 20px;
-  color: #333; /* Darker text for readability */
+  color: #333;
   text-align: center;
 }
 
-/* App Styling */
+/* App  */
 .App {
   text-align: center;
   margin-top: 5px;
 }
 
-/* Text Styling */
+/* Text */
 h1 {
-  color: #333; /* Darker shade for good readability */
+  color: #333;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 p {
-  color: #555; /* Medium-dark shade for contrast against glassy background */
+  color: #555;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* Dropdown and Select Styles */
+/* Dropdown and Select */
 .reactant-selection select {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
 }
 
-/* Reaction Styling */
+/* Reaction */
 .reaction-visualization,
 .reaction-explanation {
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -66,9 +65,9 @@ h3 {
   color: #333;
 }
 
-/* Button Styling */
+/* Button */
 button {
-  background-color: #4b7d3b; /* Dark green shade for buttons */
+  background-color: #4b7d3b;
   border: none;
   margin-top: 10px;
   padding: 10px 20px;
@@ -80,13 +79,13 @@ button {
 }
 
 button:hover {
-  background-color: #8ba44e; /* Lighter green on hover */
-  color: #333; /* Contrast on hover */
+  background-color: #8ba44e;
+  color: #333;
 }
 
 /* Dropdown Custom Styles */
 .react-select__control {
-  background-color: rgba(255, 255, 255, 0.6); /* Light glassy effect */
+  background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #ddd;
   border-radius: 5px;
   color: #1e1e1e;
@@ -94,7 +93,7 @@ button:hover {
 }
 
 .react-select__menu {
-  background-color: #f8f9fa; /* Light color for dropdown options */
+  background-color: #f8f9fa;
 }
 
 .react-select__option {
@@ -111,7 +110,7 @@ button:hover {
   color: #333;
 }
 
-/* Container for the entire app */
+/* Container */
 .app-container {
   display: flex;
   flex-direction: column;
@@ -120,11 +119,11 @@ button:hover {
   align-items: center;
 }
 
-/* Header styling */
+/* Header */
 .app-header {
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2); /* Semi-transparent header background */
+  background: rgba(0, 0, 0, 0.2);
   border: 1px solid #414b25;
   padding: 5px 10px;
   border-radius: 10px;
@@ -136,7 +135,6 @@ button:hover {
   text-align: center;
 }
 
-/* Placeholder for the logo */
 .logo-placeholder {
   width: 40px;
   height: 40px;
@@ -149,16 +147,16 @@ button:hover {
   opacity: 0.8;
 }
 
-/* Title styling */
+/* Title */
 .app-title {
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
-  flex-grow: 1; /* Allows the title to center itself between the logo and any potential right-side items */
+  flex-grow: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer Styling */
+/* Footer  */
 .app-footer {
   padding: 5px 20px;
   width: 100%;
@@ -170,19 +168,19 @@ button:hover {
 }
 
 .app-footer p {
-  color: #fff; /* Light color for readability on the dark background */
+  color: #fff;
   font-size: 0.75rem;
   margin: 0;
 }
 
-/* Link Styling */
+/* Link */
 .footer-link {
-  color: #8ba44e; /* Lighter green for footer links */
+  color: #8ba44e;
   text-decoration: none;
   margin-left: 5px;
 }
 
 .footer-link:hover {
-  color: #ffd700; /* Golden color on hover */
+  color: #ffd700;
   text-decoration: underline;
 }

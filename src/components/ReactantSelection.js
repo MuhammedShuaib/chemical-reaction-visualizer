@@ -5,15 +5,14 @@ import { reactions } from "../database";
 const customSelectStyles = {
   control: (provided) => ({
     ...provided,
-    backgroundColor: "rgba(255, 255, 255, 0.6)", // Keeps it light and glassy
-    border: "1px solid #4b7d3b",
+    backgroundColor: "rgba(255, 255, 255, 0.6)",
     color: "#333",
   }),
   placeholder: (provided) => ({
     ...provided,
-    color: "#555", // A darker gray for better readability
+    color: "#555",
     fontSize: "1rem",
-    opacity: 0.9, // Makes it more visible
+    opacity: 0.9,
   }),
   option: (provided, state) => ({
     ...provided,
@@ -67,7 +66,7 @@ const ReactantSelection = ({ setReactionDetails }) => {
         if (!reactant2Map.has(key)) {
           reactant2Map.set(key, { label, value: reaction.reactant2 });
         }
-        return null; // Return null to avoid adding duplicates in map-based logic
+        return null;
       });
 
     // Convert the map to an array for react-select options
@@ -92,7 +91,7 @@ const ReactantSelection = ({ setReactionDetails }) => {
     setReactant1("");
     setReactant2("");
     setFilteredReactants([]);
-    setReactionDetails(null); // Also reset reaction details if needed
+    setReactionDetails(null);
   };
 
   return (
@@ -108,14 +107,13 @@ const ReactantSelection = ({ setReactionDetails }) => {
       {reactant1 && (
         <Select
           styles={customSelectStyles}
-          options={filteredReactants} // Now properly formatted and filtered
+          options={filteredReactants}
           onChange={handleReactant2Change}
           value={reactant2 ? { label: reactant2, value: reactant2 } : null}
           placeholder="Select Reactant 2"
         />
       )}
 
-      {/* Reset Button: Appears only when both reactants are selected */}
       {reactant1 && reactant2 && (
         <button className="reset-button" onClick={handleReset}>
           Reset
